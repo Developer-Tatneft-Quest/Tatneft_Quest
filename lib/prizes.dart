@@ -6,13 +6,12 @@ class Prizes extends StatefulWidget {
 }
 
 class _PrizesState extends State<Prizes> {
-
-  bool change1=false;
-  bool change2=false;
-  bool change3=false;
-  bool change4=false;
-  bool change5=false;
-  bool change6=false;
+  bool change1 = false;
+  bool change2 = false;
+  bool change3 = false;
+  bool change4 = false;
+  bool change5 = false;
+  bool change6 = false;
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +33,7 @@ class _PrizesState extends State<Prizes> {
               ),
               child: RaisedButton(
                 elevation: 3,
-
+                // выбор цвета от метода
                 color: change1 ? Color(0xff00a85d) : Colors.white,
                 onPressed: () => setState(() => change1 = !change1),
                 child: Container(
@@ -64,7 +63,6 @@ class _PrizesState extends State<Prizes> {
               ),
               child: RaisedButton(
                 elevation: 3,
-
                 color: change2 ? Color(0xff00a85d) : Colors.white,
                 onPressed: () => setState(() => change2 = !change2),
                 child: Container(
@@ -98,7 +96,6 @@ class _PrizesState extends State<Prizes> {
               ),
               child: RaisedButton(
                 elevation: 3,
-
                 color: change3 ? Color(0xff00a85d) : Colors.white,
                 onPressed: () => setState(() => change3 = !change3),
                 child: Container(
@@ -128,7 +125,6 @@ class _PrizesState extends State<Prizes> {
               ),
               child: RaisedButton(
                 elevation: 3,
-
                 color: change4 ? Color(0xff00a85d) : Colors.white,
                 onPressed: () => setState(() => change4 = !change4),
                 child: Container(
@@ -162,7 +158,6 @@ class _PrizesState extends State<Prizes> {
               ),
               child: RaisedButton(
                 elevation: 3,
-
                 color: change5 ? Color(0xff00a85d) : Colors.white,
                 onPressed: () => setState(() => change5 = !change5),
                 child: Container(
@@ -192,7 +187,6 @@ class _PrizesState extends State<Prizes> {
               ),
               child: RaisedButton(
                 elevation: 3,
-
                 color: change6 ? Color(0xff00a85d) : Colors.white,
                 onPressed: () => setState(() => change6 = !change6),
                 child: Container(
