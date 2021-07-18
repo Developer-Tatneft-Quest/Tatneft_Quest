@@ -48,6 +48,7 @@ class _RecoveryState extends State<Recovery> {
             SizedBox(height: 10),
             RichText(
               text: TextSpan(
+                  style: TextStyle(color: Colors.black),
                   text: 'Вернуться назад',
                   recognizer: TapGestureRecognizer()
                     ..onTap = () {

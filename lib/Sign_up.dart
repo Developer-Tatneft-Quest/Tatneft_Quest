@@ -174,7 +174,7 @@ class _SignUpState extends State<SignUp> {
               child: Padding(
                 padding: EdgeInsets.all(10),
                 child: Text("Зарегистрироваться",
-                    style: TextStyle(color: Colors.white, fontSize: 20.0)),
+                    style: TextStyle(color: Colors.white)),
               ),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10.0)),
@@ -184,6 +184,7 @@ class _SignUpState extends State<SignUp> {
           Center(
             child: RichText(
               text: TextSpan(
+                  style: TextStyle(color: Colors.black),
                   text: 'Уже зарегистрированы?/Войти',
                   recognizer: TapGestureRecognizer()
                     ..onTap = () {

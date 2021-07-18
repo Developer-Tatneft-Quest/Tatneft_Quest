@@ -27,6 +27,7 @@ class _LogInState extends State<LogIn> {
                     padding: EdgeInsets.symmetric(horizontal: 20),
                     child: Card(
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: <Widget>[
                           //пустое пространство
                           SizedBox(
@@ -94,6 +95,7 @@ class _LogInState extends State<LogIn> {
                           RichText(
                             text: TextSpan(
                                 text: 'Восстановить пароль',
+                                style: TextStyle(color: Colors.black),
                                 recognizer: TapGestureRecognizer()
                                   ..onTap = () {
                                     Navigator.pushReplacement(context,
@@ -101,9 +103,6 @@ class _LogInState extends State<LogIn> {
                                       return Recovery();
                                     }));
                                   }),
-                          ),
-                          SizedBox(
-                            height: 10,
                           ),
                           Container(
                             child: RaisedButton(
@@ -129,6 +128,7 @@ class _LogInState extends State<LogIn> {
                           RichText(
                             text: TextSpan(
                                 text: 'Создать аккаунт',
+                                style: TextStyle(color: Colors.black),
                                 recognizer: TapGestureRecognizer()
                                   ..onTap = () {
                                     Navigator.pushReplacement(context,

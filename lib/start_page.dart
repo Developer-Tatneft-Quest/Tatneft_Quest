@@ -12,6 +12,7 @@ class StartPage extends StatelessWidget {
             margin: EdgeInsets.only(top: 50.0, bottom: 55.0),
             padding: EdgeInsets.symmetric(horizontal: 20.0),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 Flexible(
                   flex: 2,

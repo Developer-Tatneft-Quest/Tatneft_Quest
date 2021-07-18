@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'package:tatneft_quest/main_p.dart';
 import 'package:tatneft_quest/quest.dart';
+import 'package:tatneft_quest/shamsinur/shamsinur_quest.dart';
 
 class QuestHistory extends StatefulWidget {
   @override
@@ -116,7 +117,7 @@ class _QuestHistoryState extends State<QuestHistory> {
                         padding: EdgeInsets.all(10),
                         child: Text("Карта",
                             style:
-                                TextStyle(color: Colors.white, fontSize: 20.0)),
+                                TextStyle(color: Colors.white)),
                       ),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10.0)),
@@ -125,13 +126,17 @@ class _QuestHistoryState extends State<QuestHistory> {
                   Flexible(
                       child: RaisedButton(
                     elevation: 0,
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushReplacement(context,
+                          MaterialPageRoute(builder: (context) {
+                            return ShamsinurQuest();
+                          }));},
                     color: Colors.red,
                     child: Padding(
                       padding: EdgeInsets.all(10),
                       child: Text("Начать квест",
                           style:
-                              TextStyle(color: Colors.white, fontSize: 20.0)),
+                              TextStyle(color: Colors.white,)),
                     ),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10.0)),
