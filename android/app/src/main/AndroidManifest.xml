@@ -2,7 +2,7 @@
     package="com.example.tatneft_quest">
    <application
         android:label="tatneft_quest"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
