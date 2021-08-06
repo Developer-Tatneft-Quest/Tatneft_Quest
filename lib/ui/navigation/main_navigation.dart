@@ -10,6 +10,7 @@ import 'package:tatneft_quest/menu/prizes_screen.dart';
 import 'package:tatneft_quest/menu/profile_screen.dart';
 import 'package:tatneft_quest/menu/questions_screen.dart';
 import 'package:tatneft_quest/menu/settings_screen.dart';
+import 'package:tatneft_quest/slider/onboarding.dart';
 import 'package:tatneft_quest/travelPackage/cascade/cascade_quest.dart';
 import 'package:tatneft_quest/travelPackage/cascade/cs_first.dart';
 import 'package:tatneft_quest/travelPackage/cascade/cs_second.dart';
@@ -30,7 +31,8 @@ import 'package:tatneft_quest/travelPackage/start_action_screen.dart';
 
 abstract class MainNavigationRouteNames {
   static const startPage = 'start_page';
-  static const authorizationScreen = 'authorization_screen';
+  static const onboardingSlider = 'slider';
+  static const authorizationScreen = '/authorization_screen';
   static const restorePasswordScreen =
       '/authorization_screen/restore_password_screen';
   static const registrationScreen = 'registration_screen';
@@ -78,6 +80,7 @@ class MainNavigation {
       : MainNavigationRouteNames.authorizationScreen;
   final routes = <String, Widget Function(BuildContext)>{
     MainNavigationRouteNames.startPage: (context) => StartPage(),
+    MainNavigationRouteNames.onboardingSlider: (context) => OnbordingWidget(),
     MainNavigationRouteNames.authorizationScreen: (context) => AuthorizationWidget(),
         // AuthProvider(model: AuthModel(), child: const ),
     MainNavigationRouteNames.restorePasswordScreen: (context) => RestorePasswordWidget(),
